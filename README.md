@@ -57,3 +57,5 @@ _For more information about our HelloID PowerShell connectors, please refer to o
 - /upsert  *Update Information*
 - /Picklist('ecEmailType')
 
+# HelloID Docs
+The official HelloID documentation can be found at: https://docs.helloid.com/
