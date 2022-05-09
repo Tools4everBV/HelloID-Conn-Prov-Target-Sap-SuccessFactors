@@ -23,8 +23,12 @@
 ---
 ## Getting started
 
-
 By using this connector you will have the ability to update identities from the SAP SuccessFactors system. Since we won't create employees with a target connector the create action is just an update. Also, because of this, there is only one action with can be used for the create and the update. And there are no enable, disable and delete ations.
+
+### Remarks
+
+- When using create.ps1 for updating the username, it's required to have the username mapped to a customfield in the PerPersonal endpoint. 
+- CreateV2.ps1 uses the User endpoint for updating the username. Additional permissions are needed for the API User/Key within the SAP environment
 
 ### Prerequisites
 
@@ -62,6 +66,7 @@ _For more information about our HelloID PowerShell connectors, please refer to o
 - /PerEmail
 - /upsert  *Update Information*
 - /Picklist('ecEmailType')
+- /User (only in the createV2.ps1)
 
 # HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
